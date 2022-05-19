@@ -1,4 +1,6 @@
 function verifyLogin() {
+  // Valid username: Glitch password: Glitch123
+  
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
 
