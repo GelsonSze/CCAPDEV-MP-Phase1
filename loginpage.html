@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/login.css" />
+    <script src="../JS/login.js"></script>
+  </head>
+  <body>
+    <div class="border">
+      <div class="main">
+        <img src="../Home_Images/logo_light.png" class="logo" />
+        <h1>Welcome to GLITCH</h1>
+        <form>
+          <p>Username:</p>
+          <input
+            type="text"
+            name=""
+            placeholder=" Enter username"
+            id="username"
+          />
+          <p>Password:</p>
+          <input
+            type="password"
+            name=""
+            placeholder=" Enter password"
+            id="password"
+          />
+          <input type="checkbox" value="lsRememberMe" id="rememberMe" />
+          <label for="rememberMe">Remember me</label>
+          <br /><span id="error"> </span>
+          <input type="button" name="" value="Login" onclick="verifyLogin()" />
+          <a href="">Forget Password?</a><br />
+          <a class="sub"> Don't have an account? </a>
+          <a href="registerpage.html"> Sign Up</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/editpage.css" />
+    <script>
+      function saveChanges(form) {
+        p1 = form.npass.value;
+        p2 = form.cpass.value;
+
+        if (p1 != p2) {
+          alert("Passwords did not match: Please try again...");
+        } else if (p1 != "") {
+          alert("Password Matches!");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <img src="../Home_Images/logo_light.png" id="logo" alt="icon" />
+      <input type="text" placeholder="Search Users" name="search" id="search" />
+      <a href="../profilepage.html" id="Profile">Profile</a>
+      <a href="../home.html" id="Home">Home</a>
+    </nav>
+
+    <main>
+      <img id="edit" src="../Home_Images/edit.png" alt="dp" />
+      <h2>Editing Profile</h2>
+      <a href="../profilepage.html" class="button">Go Back</a>
+      <button type="button" onclick="saveChanges(details)">Save Changes</button>
+
+      <header>
+        <div class="insidepic">
+          <img
+            id="dp"
+            src="../Home_Images/pepethefrog.jpg"
+            alt="dp"
+          /><br /><br />
+          <input type="file" id="file" />
+          <label for="file">Upload your image</label>
+        </div>
+        <div class="insidetxt">
+          <form id="details">
+            <label for="username">Username</label><br />
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Your username..."
+            /><br />
+
+            <label for="description">Description</label><br />
+            <input
+              type="text"
+              id="description"
+              name="description"
+              placeholder="Your description..."
+            /><br />
+
+            <label for="email">Email</label><br />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email..."
+            /><br />
+
+            <label for="opass">Old Password</label><br />
+            <input
+              type="text"
+              id="opass"
+              name="opass"
+              placeholder="Your old password..."
+            /><br />
+
+            <label for="npass">New Password</label><br />
+            <input
+              type="text"
+              id="npass"
+              name="npass"
+              placeholder="Your new password..."
+            /><br />
+
+            <label for="cpass">Confirm Password</label><br />
+            <input
+              type="text"
+              id="cpass"
+              name="cpass"
+              placeholder="Confirm your new password..."
+            /><br />
+          </form>
+        </div>
+      </header>
+    </main>
+  </body>
+</html>
